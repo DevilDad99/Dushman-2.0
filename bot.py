@@ -11,7 +11,7 @@ bot = commands.Bot(command_prefix="!", intents=intents)
 
 BLOCKED_WORDS = ["good morning", "gm", "shubh prabhat", "gud morning"]
 IGNORED_USERS = []  # Add user IDs to ignore
-BOSS_USERS = [1368236764564553829, 1025027158567043072, 1135951424199606434]  # Real boss users
+BOSS_USERS = [1368236764564553829, 1025027158567043072, 1135951424199606434]  # Boss user IDs
 
 LOG_FILE = "bot_logs.txt"
 
@@ -59,5 +59,4 @@ async def showlog(ctx):
             await ctx.send("```" + "".join(lines) + "```")
     except FileNotFoundError:
         await ctx.send("No log file found.")
-
 bot.run("MTM5NDYwOTI0NzQzNzg1MjcxNA.Gljxq4.cX09doGAGlqPmIRppI4P3OwGzL2Ez3FG_WzaS8")
